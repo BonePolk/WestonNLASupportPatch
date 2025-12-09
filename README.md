@@ -27,11 +27,11 @@ ninja -C build install
 # How to run
 ## Install winpr3-utils
 ```
-sudo apt install winpr3-utils
+sudo apt install winpr-utils
 ```
 ## Create NTLM hash
 ```
-winpr-hash3 -u <user> -p <password> -f sam
+winpr-hash -u <user> -p <password> -f sam
 ```
 result will be like: `weston:::b2ca4ec6a1dbd13c49b6ab5e1b10d5bf:::`
 ## Create SAM file
@@ -41,7 +41,7 @@ mkdir /etc/winpr
 Paste ntlm hash into /etc/winpr/SAM 
 ## Create cert and key
 ```
-winpr-makecert3 -rdp -path .
+winpr-makecert -rdp -path .
 ```
 current dir will contain files such as BonePolk.crt and BonePolk.key
 ## Run weston in rdp mode
