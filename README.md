@@ -1,5 +1,6 @@
 # WestonNLASupportPatch
 Patch for weston to support nla for rdp backend
+
 Before using your patched weston remove original version
 
 # How to apply
