@@ -3,9 +3,11 @@ Patch for weston to support nla for rdp backend
 
 # How to apply
 ```
+git clone https://github.com/BonePolk/WestonNLASupportPatch.git
 git clone https://gitlab.freedesktop.org/wayland/weston.git
+cd wenston
 git checkout 14.0
-git apply <path_for_patch>
+git apply ../WestonNLASupportPatch/
 ```
 
 # Bulding weston
