@@ -6,6 +6,9 @@ Before using your patched weston remove original version
 # How to apply
 ```
 git clone https://github.com/BonePolk/WestonNLASupportPatch.git
+cd WestonNLASupportPatch
+git checkout 12.0
+cd ..
 git clone https://gitlab.freedesktop.org/wayland/weston.git
 cd weston
 git checkout 14.0
