@@ -14,7 +14,7 @@ git apply ../WestonNLASupportPatch/weston_rdp_nla_support.patch
 ```
 python3 -m venv .venv
 source .venv/bin/activate
-pip install menston
+pip install meson
 meson setup build
 ninja -C build install
 ```
