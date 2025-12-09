@@ -1,18 +1,15 @@
 diff --git a/libweston/backend-rdp/rdp.c b/libweston/backend-rdp/rdp.c
-index 0059b418..d624ac36 100644
+index 84926745..e5a515f9 100644
 --- a/libweston/backend-rdp/rdp.c
 +++ b/libweston/backend-rdp/rdp.c
-@@ -1775,10 +1775,11 @@ rdp_peer_init(freerdp_peer *client, struct rdp_backend *b)
+@@ -1634,7 +1634,9 @@ rdp_peer_init(freerdp_peer *client, struct rdp_backend *b)
+ 	} else {
  		settings->TlsSecurity = FALSE;
  	}
- #endif
--	freerdp_settings_set_bool(settings, FreeRDP_NlaSecurity, FALSE);
-+	freerdp_settings_set_bool(settings, FreeRDP_Authentication, TRUE);
-+	freerdp_settings_set_bool(settings, FreeRDP_NlaSecurity, TRUE);
-+	freerdp_settings_set_bool(settings, FreeRDP_RdpSecurity, TRUE);
+-	settings->NlaSecurity = FALSE;
++	settings->Authentication = TRUE;
++	settings->NlaSecurity = TRUE;
++	settings->RdpSecurity = TRUE;
  
  	if (!client->Initialize(client)) {
--		weston_log("peer initialization failed\n");
- 		goto error_initialize;
- 	}
- 
+ 		weston_log("peer initialization failed\n");
