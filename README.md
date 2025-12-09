@@ -7,7 +7,7 @@ git clone https://github.com/BonePolk/WestonNLASupportPatch.git
 git clone https://gitlab.freedesktop.org/wayland/weston.git
 cd wenston
 git checkout 14.0
-git apply ../WestonNLASupportPatch/
+git apply ../WestonNLASupportPatch/weston_rdp_nla_support.patch
 ```
 
 # Bulding weston
