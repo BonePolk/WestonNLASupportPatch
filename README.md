@@ -25,7 +25,7 @@ ninja -C build install
 ```
 
 # How to run
-## Install winpr3-utils
+## Install winpr-utils
 ```
 sudo apt install winpr-utils
 ```
