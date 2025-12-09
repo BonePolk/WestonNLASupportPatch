@@ -7,11 +7,11 @@ Before using your patched weston remove original version
 ```
 git clone https://github.com/BonePolk/WestonNLASupportPatch.git
 cd WestonNLASupportPatch
-git checkout 12.0
+git checkout v12.0
 cd ..
 git clone https://gitlab.freedesktop.org/wayland/weston.git
 cd weston
-git checkout 14.0
+git checkout 12.0
 git apply ../WestonNLASupportPatch/weston_rdp_nla_support.patch
 ```
 
